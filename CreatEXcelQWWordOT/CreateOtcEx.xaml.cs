@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CreatEXcelQWWordOT
 {
@@ -21,7 +22,29 @@ namespace CreatEXcelQWWordOT
     {
         public CreateOtcEx()
         {
+            Start.Zav = " ";
+            Start.KolTov = " ";
+            Start.StartIndex = 1;
+            Start.LolPov = 1;
             InitializeComponent();
+   
         }
+
+        private void Get_Click(object sender, RoutedEventArgs e)
+        {
+            if (BP114f.IsChecked == true)
+            {
+                Start.KolTov = KOlitictvo.Text.ToString();
+                Start.Zav = Zavod.Text.ToString();
+                Func.BP114F();
+            }
+
+
+
+        }
+   
+
+
+
     }
 }

@@ -13,11 +13,13 @@
                            />
             <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="AndWhe" Width="430" Height="30" Margin="319,10,43,280" Grid.Row="1"></TextBox>
-        <Label Name="RR" Height="30" Content="Завод:" Grid.Row="1" Margin="266,10,478,280"/>
-        <Label Name="TT" Content=" Выберите нуную продукцию" Height="33" FontSize="16" Margin="311,8,244,7" />
-        <CheckBox Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="58,63,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195"/>
-        <Button x:Name="Get" Content=" Создать отчет" Height="30" Width="120" Margin="645,280,27,10" Grid.Row="1"></Button>
-        <CheckBox Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="58,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182"/>
+        <TextBox x:Name="Zavod" Width="430" Height="30" Margin="318,10,0,280" Grid.Row="1" HorizontalAlignment="Left"></TextBox>
+        <Label Name="RR" Height="30" Content="Завод:" Grid.Row="1" Margin="265,10,0,280" HorizontalAlignment="Left" Width="48"/>
+        <Label Name="TT" Content=" Выберите нужную продукцию" Height="33" FontSize="16" Margin="278,10,267,5" />
+        <CheckBox x:Name="BP114f" Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="57,85,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195"/>
+        <Button Click="Get_Click" x:Name="Get" Content=" Создать отчет" Height="30" Width="120" Margin="644,280,0,0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+        <CheckBox x:Name="BP2f" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="57,106,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182"/>
+        <TextBox x:Name="KOlitictvo" Height="30" Margin="342,45,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="90" VerticalAlignment="Top"/>
+        <Label x:Name="RR_Copy" Height="30" Content="Количество:" Grid.Row="1" Margin="265,45,0,245" HorizontalAlignment="Left" Width="77"/>
     </Grid>
 </Window>
