@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreatEXcelQWWordOT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Меню" Height="228.545" Width="363.727" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Button Click="CreaOtch_Click" Name="CreaOtch" Content=" Создать отчет" Height="30" Margin="99,39,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="157"/>
+        <Button Click="Edit_Click" x:Name="Edit" Content=" Изменить продукцию" Height="30" Margin="99,84,0,0" HorizontalAlignment="Left" Width="157" VerticalAlignment="Top"/>
+        <Button Click="Add_Click" x:Name="Add" Content=" Добавить продукцию" Width="157" Height="30" Margin="99,0,0,42" VerticalAlignment="Bottom" HorizontalAlignment="Left"></Button>
     </Grid>
 </Window>

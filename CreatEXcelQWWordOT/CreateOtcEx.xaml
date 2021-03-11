@@ -1,0 +1,23 @@
+﻿<Window x:Class="CreatEXcelQWWordOT.CreateOtcEx"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreatEXcelQWWordOT"
+        mc:Ignorable="d"
+        Title="CreateOtcEx" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="80*"
+                           />
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="AndWhe" Width="430" Height="30" Margin="319,10,43,280" Grid.Row="1"></TextBox>
+        <Label Name="RR" Height="30" Content="Завод:" Grid.Row="1" Margin="266,10,478,280"/>
+        <Label Name="TT" Content=" Выберите нуную продукцию" Height="33" FontSize="16" Margin="311,8,244,7" />
+        <CheckBox Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="58,63,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="Get" Content=" Создать отчет" Height="30" Width="120" Margin="645,280,27,10" Grid.Row="1"></Button>
+        <CheckBox Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="58,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182"/>
+    </Grid>
+</Window>
