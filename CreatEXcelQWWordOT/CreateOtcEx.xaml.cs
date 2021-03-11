@@ -22,8 +22,9 @@ namespace CreatEXcelQWWordOT
     {
         public CreateOtcEx()
         {
-            Fail.Aplex();
-            Start.Zav = " ";
+            Start.ВР114F = false;
+        Start.ВР2F = false;
+        Start.Zav = " ";
             Start.KolTov = " ";
             Start.StartIndex = 1;
             Start.LolPov = 1;
@@ -33,22 +34,29 @@ namespace CreatEXcelQWWordOT
 
         private void Get_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow WW = new MainWindow();
+            WW.Show();
+            this.Close();
             if (BP114f.IsChecked == true)
             {
                 Start.KolPov += 1;
                 Start.KolTov = KOlitictvo.Text.ToString();
                 Start.Zav = Zavod.Text.ToString();
-                Func.BP114F();
+                Start.ВР114F = true;
+                
             }
             if (BP2f.IsChecked == true)
             {
+
+                Start.ВР2F = true;
                 Start.KolPov += 1;
                 Start.KolTov = KOlitictvo.Text.ToString();
                 Start.Zav = Zavod.Text.ToString();
-                Func.ВР2F();
+                
+                
             }
-
-
+            Func.BP114F();
+            
 
         }
    
