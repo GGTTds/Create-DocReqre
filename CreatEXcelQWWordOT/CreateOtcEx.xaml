@@ -21,5 +21,6 @@
         <CheckBox x:Name="BP2f" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="57,106,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182"/>
         <TextBox x:Name="KOlitictvo" Height="30" Margin="342,45,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="90" VerticalAlignment="Top"/>
         <Label x:Name="RR_Copy" Height="30" Content="Количество:" Grid.Row="1" Margin="265,45,0,245" HorizontalAlignment="Left" Width="77"/>
+        <CheckBox x:Name="ZN3_4" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="57,127,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231"/>
     </Grid>
 </Window>

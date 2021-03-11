@@ -23,7 +23,8 @@ namespace CreatEXcelQWWordOT
         public CreateOtcEx()
         {
             Start.ВР114F = false;
-        Start.ВР2F = false;
+            Start.ВР2F = false;
+             Start.ZN34 = false;
         Start.Zav = " ";
             Start.KolTov = " ";
             Start.StartIndex = 1;
@@ -54,6 +55,16 @@ namespace CreatEXcelQWWordOT
                 Start.Zav = Zavod.Text.ToString();
                 
                 
+            }
+            if (ZN3_4.IsChecked == true)
+            {
+
+                Start.ZN34 = true;
+                Start.KolPov += 1;
+                Start.KolTov = KOlitictvo.Text.ToString();
+                Start.Zav = Zavod.Text.ToString();
+
+
             }
             Func.BP114F();
             

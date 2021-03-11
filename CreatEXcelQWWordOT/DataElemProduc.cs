@@ -23,6 +23,16 @@ namespace CreatEXcelQWWordOT
             public static string Chert = "14504968.494726.ВР2К.008.02";
             public static string Ima = "Закладная под ключ ВР 2F";
         }
+        public class ZN34
+        {
+            public static double PosOtv = 15.1;
+            public static double BurtNar = 24;
+            public static double Hei = 31.4;
+            public static double NarDia = 19.9;
+            public static double Pog = 0.05;
+            public static string Chert = "14504968.494726.ZN3/4.001.02";
+            public static string Ima = "Закладная для накидной гайки ZN3/4";
+        }
 
 
 

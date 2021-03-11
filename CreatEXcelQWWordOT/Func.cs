@@ -117,15 +117,79 @@ namespace CreatEXcelQWWordOT
                 StartIndex += 1;
                 worksheet.Cells[2][StartIndex] = " Напишите массу";
 
-               
 
+                StartIndex += 3;
 
 
                 worksheet.Columns.AutoFit();
 
                 
             }
+            else { }
+            if (Start.ZN34 == true)
+            {
+                Excel.Range RR1 = worksheet.Range[worksheet.Cells[1][StartIndex], worksheet.Cells[5][StartIndex + 9]];
+                RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                    RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                    RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                    RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                    RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                    RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
 
+                worksheet.Cells[1][StartIndex] = " Завод ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Наименование ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Поступило штук ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " П№ чертежа ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " ВидПроверки ";
+                worksheet.Cells[2][StartIndex] = " Норма ";
+                worksheet.Cells[3][StartIndex] = " Факт ";
+                worksheet.Cells[4][StartIndex] = " Проверено, шт ";
+                worksheet.Cells[5][StartIndex] = " Несоотв., шт ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Посадочного отв., мм ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Бурта наружныйб мм ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Высота, мм ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " наружный, мм ";
+                StartIndex += 1;
+                worksheet.Cells[1][StartIndex] = " Масса,г ";
+
+
+                StartIndex -= 9;
+
+                worksheet.Cells[2][StartIndex] = Start.Zav;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Ima.ToString(); ;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = Start.KolTov;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Chert;
+                StartIndex += 1;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = $"{DataElemProduc.ZN34.PosOtv} - {DataElemProduc.ZN34.Pog}";
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.BurtNar;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Hei;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.NarDia;
+                StartIndex += 1;
+                worksheet.Cells[2][StartIndex] = " Напишите массу";
+
+
+
+
+
+                worksheet.Columns.AutoFit();
+
+
+            }
 
 
             App.Visible = true;

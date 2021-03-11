@@ -16,5 +16,6 @@ namespace CreatEXcelQWWordOT
         public static string Zav = "";
         public static  bool ВР114F = false ;
         public static bool ВР2F = false;
+        public static bool ZN34 = false;
     }
 }
