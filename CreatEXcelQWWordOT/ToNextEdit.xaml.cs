@@ -15,25 +15,20 @@ using System.Windows.Shapes;
 namespace CreatEXcelQWWordOT
 {
     /// <summary>
-    /// Логика взаимодействия для EditProd.xaml
+    /// Логика взаимодействия для ToNextEdit.xaml
     /// </summary>
-    public partial class EditProd : Window
+    public partial class ToNextEdit : Window
     {
-        public EditProd()
+        public  ToNextEdit(string r)
         {
             InitializeComponent();
-           
+           if(r !=null)
+            { pos.Text.ToString(); }
         }
-
-        public void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void Go_Click(object sender, RoutedEventArgs e)
         {
-            if (Bp114f.IsChecked == true)
-            {
-                string g = "ВР114F";
-                ToNextEdit WW = new ToNextEdit(g);
-                WW.Show();
-                this.Close();
-            }
+            
         }
     }
 }

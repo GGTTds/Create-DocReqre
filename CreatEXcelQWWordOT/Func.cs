@@ -36,7 +36,7 @@ namespace CreatEXcelQWWordOT
                 worksheet.Cells[4][StartIndex] = " Проверено, шт ";
                 worksheet.Cells[5][StartIndex] = " Несоотв., шт ";
                 StartIndex += 1;
-                worksheet.Cells[1][StartIndex] = " Посадочного отв., мм ";
+                worksheet.Cells[1][StartIndex] = " Ø посадочного отверстия, мм ";
                 StartIndex += 1;
                 worksheet.Cells[1][StartIndex] = " Масса,г ";
 
@@ -97,7 +97,7 @@ namespace CreatEXcelQWWordOT
                 worksheet.Cells[4][StartIndex] = " Проверено, шт ";
                 worksheet.Cells[5][StartIndex] = " Несоотв., шт ";
                 StartIndex += 1;
-                worksheet.Cells[1][StartIndex] = " Посадочного отв., мм ";
+                worksheet.Cells[1][StartIndex] = " Ø посадочного отверстия, мм ";
                 StartIndex += 1;
                 worksheet.Cells[1][StartIndex] = " Масса,г ";
 
@@ -150,13 +150,13 @@ namespace CreatEXcelQWWordOT
                 worksheet.Cells[4][StartIndex] = " Проверено, шт ";
                 worksheet.Cells[5][StartIndex] = " Несоотв., шт ";
                 StartIndex += 1;
-                worksheet.Cells[1][StartIndex] = " Посадочного отв., мм ";
+                worksheet.Cells[1][StartIndex] = "Ø посадочного отверстия, мм ";
                 StartIndex += 1;
-                worksheet.Cells[1][StartIndex] = " Бурта наружныйб мм ";
+                worksheet.Cells[1][StartIndex] = " Ø бурта наружный, мм ";
                 StartIndex += 1;
                 worksheet.Cells[1][StartIndex] = " Высота, мм ";
                 StartIndex += 1;
-                worksheet.Cells[1][StartIndex] = " наружный, мм ";
+                worksheet.Cells[1][StartIndex] = " Ø наружный, мм ";
                 StartIndex += 1;
                 worksheet.Cells[1][StartIndex] = " Масса,г ";
 
