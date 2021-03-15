@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +8,14 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using MessageBox = System.Windows.MessageBox;
+using Path = System.IO.Path;
 
 namespace CreatEXcelQWWordOT
 {
@@ -30,11 +34,16 @@ namespace CreatEXcelQWWordOT
             Start.StartIndex = 1;
             Start.LolPov = 1;
             InitializeComponent();
-   
+           
+
         }
 
         private void Get_Click(object sender, RoutedEventArgs e)
         {
+
+
+
+
             MainWindow WW = new MainWindow();
             WW.Show();
             this.Close();
@@ -44,7 +53,7 @@ namespace CreatEXcelQWWordOT
                 Start.KolTov = KOlitictvo.Text.ToString();
                 Start.Zav = Zavod.Text.ToString();
                 Start.ВР114F = true;
-                
+
             }
             if (BP2f.IsChecked == true)
             {
@@ -53,8 +62,8 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.KolTov = KOlitictvo.Text.ToString();
                 Start.Zav = Zavod.Text.ToString();
-                
-                
+
+
             }
             if (ZN3_4.IsChecked == true)
             {
@@ -67,12 +76,12 @@ namespace CreatEXcelQWWordOT
 
             }
             Func.BP114F();
-            
+
 
         }
-   
 
 
 
-    }
+
+        }
 }

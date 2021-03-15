@@ -18,5 +18,6 @@ namespace CreatEXcelQWWordOT
         public static bool ВР2F = false;
         public static bool ZN34 = false;
         public static object Sar;
+        public static string Abje = "";
     }
 }

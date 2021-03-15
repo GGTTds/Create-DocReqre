@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Collections;
 
 namespace CreatEXcelQWWordOT
 {
@@ -19,16 +20,48 @@ namespace CreatEXcelQWWordOT
     /// </summary>
     public partial class ToNextEdit : Window
     {
+  
         public  ToNextEdit(string r)
         {
+            Start.Abje = r;
             InitializeComponent();
-           if(r !=null)
-            { pos.Text.ToString(); }
+            if (Start.Abje == "ВР114F") 
+            { 
+                
+
+                //pos.Text = DataElemProduc.ВР114F.PosOtv.ToString();
+            
+
+            
+            }
+
+            
+            
         }
         
         private void Go_Click(object sender, RoutedEventArgs e)
         {
+            if (Start.Abje == "ВР114F")
+            { 
+            // DataElemProduc.ВР114F.PosOtv = pos.Text.ToString(); MessageBox.Show(DataElemProduc.ВР114F.PosOtv);
+            //    this.Close();
+            }
             
         }
+    
+    
+    public void TT()
+        {
+            if (Start.Abje == "ВР114F")
+            {
+                
+            }
+        }
+    
+    
+    
+    
+    
+    
     }
 }
