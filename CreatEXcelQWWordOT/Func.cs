@@ -170,77 +170,152 @@ namespace CreatEXcelQWWordOT
             //MessageBox.Show(s[1].ToString());
 
 
-            for (int i=0; i<=Start.KolPov; i++)
+            for (int i = 0; i <= Start.KolPov; i++)
             {
-              
-                try
+
+                //try
+                //{
+
+                int pp = StartIndex;
+
+
+                Excel.Worksheet worksheet1 = App.Worksheets[s[i]];
+                Excel.Worksheet worksheet2 = App.Worksheets["Отчет"];
+                worksheet2.Columns.AutoFit();
+
+
+
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][1];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][1];
+                worksheet2.Cells[6][StartIndex] = worksheet1.Cells[6][1];
+                Excel.Range Head21 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
+                Head21.Merge();
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][2];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][2];
+                Excel.Range Head211 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
+                Head211.Merge();
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][3];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][3];
+                Excel.Range Head214 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
+                Head214.Merge();
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][4];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][4];
+                worksheet2.Cells[3][StartIndex] = worksheet1.Cells[3][4];
+                worksheet2.Cells[4][StartIndex] = worksheet1.Cells[4][4];
+                worksheet2.Cells[5][StartIndex] = worksheet1.Cells[5][4];
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][5];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][5];
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][6];
+                worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][6];
+                //Excel.Range Head27 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[6][StartIndex]];
+                //Head27.Merge();
+                StartIndex += 1;
+                worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][7];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][7];
+                StartIndex += 1;
+
+
+
+
+                //MessageBox.Show(StartIndex.ToString());
+                if (worksheet1.Cells[1][StartIndex].Formula == "Прочность резьбового соединения")
+                {
+                   
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][8];
+                    int Nwe = StartIndex;
+                    StartIndex += 1;
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][8];
+                    StartIndex += 1;
+                    int cla = StartIndex;
+                    Excel.Range Head = worksheet2.Range[worksheet2.Cells[1][Nwe], worksheet2.Cells[1][cla]];
+                    Head.Merge();
+                    Excel.Range Head2 = worksheet2.Range[worksheet2.Cells[2][Nwe], worksheet2.Cells[2][cla]];
+                    Head2.Merge();
+                    worksheet2.Cells[3][Nwe] = "1)";
+                    worksheet2.Cells[3][Nwe + 1] = "2)";
+                    worksheet2.Cells[3][Nwe + 2] = "3)";
+                    StartIndex += 1;
+                    MessageBox.Show(StartIndex.ToString()) ;
+                }
+                else
+                {
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][8];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][8];
+                    StartIndex += 1;
+                }
+                    
+                
+
+                if (worksheet1.Cells[1][StartIndex].Formula == "Скручивание резьбы фитинга")
+                {
+                  
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][11];
+                    int Nwe = StartIndex;
+                    StartIndex += 1;
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][11];
+                    StartIndex += 1;
+                    int cla = StartIndex;
+                    Excel.Range Head = worksheet2.Range[worksheet2.Cells[1][Nwe], worksheet2.Cells[1][cla]];
+                    Head.Merge();
+                    Excel.Range Head2 = worksheet2.Range[worksheet2.Cells[2][Nwe], worksheet2.Cells[2][cla]];
+                    Head2.Merge();
+                    worksheet2.Cells[3][Nwe] = "1)";
+                    worksheet2.Cells[3][Nwe + 1] = "2)";
+                    worksheet2.Cells[3][Nwe + 2] = "3)";
+
+                }
+                else
                 {
 
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][9];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][9];
+                    StartIndex += 1;
+                }
 
-                    Excel.Range Rng;
-                 
+                if (worksheet1.Cells[1][StartIndex].Formula == "Наружный диаметр бурта")
+                {
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][10];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][10];
+                    StartIndex += 1;
+                }
+                else { }
+                if (worksheet1.Cells[1][StartIndex].Formula == "Масса, г")
+                {
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][11];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][11];
+                    StartIndex += 1;
+                }
+                else { }
 
-                    Excel.Worksheet worksheet1 = App.Worksheets[s[i]];
-                    Excel.Worksheet worksheet2 = App.Worksheets["Отчет"];
-                    Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][StartIndex], worksheet2.Cells[6][StartIndex + 5]];
+
+
+                int gg = StartIndex;
+  
+            
+                Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg]];
                     RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
                         RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
                         RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
                         RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
                         RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
                         RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][1];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][1];
-                    worksheet2.Cells[6][StartIndex] = worksheet1.Cells[6][1];
-                    Excel.Range Head21 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    Head21.Merge();
-                    StartIndex += 1;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][2];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][2];
-                    Excel.Range Head211 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    Head211.Merge();
-                    StartIndex += 1;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][3];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][3];
-                    Excel.Range Head214 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    Head214.Merge();
-                    StartIndex += 1;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][4];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][4];
-                    worksheet2.Cells[3][StartIndex] = worksheet1.Cells[3][4];
-                    worksheet2.Cells[4][StartIndex] = worksheet1.Cells[4][4];
-                    worksheet2.Cells[5][StartIndex] = worksheet1.Cells[5][4];
-                    StartIndex += 1;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][5];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][5];
-                    StartIndex += 1;
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][6];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][6];
-                    //Excel.Range Head2 = worksheet2.Range[worksheet2.Cells[6][2], worksheet2.Cells[6][StartIndex]];
-                    //Head2.Merge();
-                    StartIndex += 1;
-                    if (worksheet2.Cells[1][StartIndex] != null)
-                    {
-                        worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][7];
-                        worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][7];
-                    }
-                    StartIndex += 1;
-                    if (worksheet2.Cells[1][StartIndex] != null)
-                    {
-                        worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][8];
-                        worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][8];
-                    }
-                    worksheet2.Columns.AutoFit();
-                }
+                StartIndex += 1;
 
-                catch
-                {
+                //}
 
-                }
+                //catch (Exception ex)
+                //{
+                //    ex.Message.ToString();
+                //}
 
-
+                
             }
-            
+        
             App.Visible = true;
     
 
