@@ -8,19 +8,28 @@
         Title="CreateOtcEx" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="12*"/>
-            <RowDefinition Height="80*"
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="359*"
                            />
             <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="Zavod" Width="430" Height="30" Margin="318,10,0,280" Grid.Row="1" HorizontalAlignment="Left"></TextBox>
-        <Label Name="RR" Height="30" Content="Завод:" Grid.Row="1" Margin="265,10,0,280" HorizontalAlignment="Left" Width="48"/>
-        <Label Name="TT" Content=" Выберите нужную продукцию" Height="33" FontSize="16" Margin="278,10,267,5" />
-        <CheckBox x:Name="BP114f" Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="57,85,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195"/>
+        <Label Name="TT" Content=" Выберите нужную продукцию" FontSize="16" Margin="278,10,267,5" />
+        <CheckBox x:Name="BP114f" Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="48,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Height="16"/>
         <Button Click="Get_Click" x:Name="Get" Content=" Создать отчет" Height="30" Width="120" Margin="644,280,0,0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
-        <CheckBox x:Name="BP2f" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="57,106,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182"/>
-        <TextBox x:Name="KOlitictvo" Height="30" Margin="342,45,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="90" VerticalAlignment="Top"/>
-        <Label x:Name="RR_Copy" Height="30" Content="Количество:" Grid.Row="1" Margin="265,45,0,245" HorizontalAlignment="Left" Width="77"/>
-        <CheckBox x:Name="ZN3_4" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="57,127,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231"/>
+        <CheckBox x:Name="BP2f" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="48,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" Height="16"/>
+        <CheckBox x:Name="ZN3_4" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="48,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
+        <CheckBox x:Name="BP114f_Copy" Content="Гайка накидная на лат.вставке GN3/4"  HorizontalAlignment="Left" Margin="48,80,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
+        <CheckBox x:Name="BP2f_Copy" Content="ННиппель для американки ННМА-40-1 1/4-М63" HorizontalAlignment="Left" Margin="48,101,0,0" Grid.Row="1" VerticalAlignment="Top" Width="287" Height="16"/>
+        <CheckBox x:Name="ZN3_4_Copy" Content="Закладная НР 1/2М (CW617N)" HorizontalAlignment="Left" Margin="48,122,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Height="16" />
+        <CheckBox x:Name="BP114f_Copy1" Content="Закладная BP 1/2F"  HorizontalAlignment="Left" Margin="48,142,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Height="16" />
+        <CheckBox x:Name="BP2f_Copy1" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="48,163,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" Height="16"/>
+        <CheckBox x:Name="ZN3_4_Copy1" Content="Закладная под ключ ВP 1F " HorizontalAlignment="Left" Margin="48,184,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
+        <CheckBox x:Name="BP114f_Copy2" Content="-"  HorizontalAlignment="Left" Margin="48,203,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Height="16"/>
+        <CheckBox x:Name="BP2f_Copy2" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="48,224,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" Height="16"/>
+        <CheckBox x:Name="ZN3_4_Copy2" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="48,245,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
+        <CheckBox x:Name="ZN3_4_Copy3" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="48,263,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
+        <CheckBox x:Name="BP114f_Copy3" Content="Закладная под ключ ВР 1 1/4F"  HorizontalAlignment="Left" Margin="48,282,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Height="16"/>
+        <CheckBox x:Name="BP2f_Copy3" Content="Закладная под ключ ВР 2F" HorizontalAlignment="Left" Margin="48,303,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" Height="16"/>
+        <CheckBox x:Name="ZN3_4_Copy4" Content="Закладная для накидной гайки ZN3/4" HorizontalAlignment="Left" Margin="48,324,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Height="16"/>
     </Grid>
 </Window>

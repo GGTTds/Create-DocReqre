@@ -26,11 +26,7 @@ namespace CreatEXcelQWWordOT
     {
         public CreateOtcEx()
         {
-            Start.ВР114F = false;
-            Start.ВР2F = false;
-             Start.ZN34 = false;
-        Start.Zav = " ";
-            Start.KolTov = " ";
+            Start.KolPov = 1;
             Start.StartIndex = 1;
             Start.LolPov = 1;
             InitializeComponent();
@@ -42,46 +38,35 @@ namespace CreatEXcelQWWordOT
         {
 
 
-
-
             MainWindow WW = new MainWindow();
             WW.Show();
             this.Close();
             if (BP114f.IsChecked == true)
             {
                 Start.KolPov += 1;
-                Start.KolTov = KOlitictvo.Text.ToString();
-                Start.Zav = Zavod.Text.ToString();
-                Start.ВР114F = true;
+                Start.str[Start.KolPov] = "Лист2";
 
             }
             if (BP2f.IsChecked == true)
             {
-
-                Start.ВР2F = true;
                 Start.KolPov += 1;
-                Start.KolTov = KOlitictvo.Text.ToString();
-                Start.Zav = Zavod.Text.ToString();
+                Start.str[Start.KolPov] = "Лист3";
 
 
             }
             if (ZN3_4.IsChecked == true)
             {
-
-                Start.ZN34 = true;
                 Start.KolPov += 1;
-                Start.KolTov = KOlitictvo.Text.ToString();
-                Start.Zav = Zavod.Text.ToString();
+                Start.str[Start.KolPov] = "Лист4";
 
 
             }
-            Func.BP114F();
+            //MessageBox.Show(Start.str[1].ToString());
+            Func.Viz(Start.str);
 
 
         }
 
-
-
-
-        }
+  
+    }
 }
