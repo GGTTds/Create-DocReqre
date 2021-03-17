@@ -111,6 +111,12 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист14";
             }
+            if (BP114f_Copy3.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист14";
+            }
+            
             if (BP2f_Copy3.IsChecked == true)
             {
                 Start.KolPov += 1;
@@ -156,6 +162,132 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист23";
             }
+            if (F8.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист24";
+            }
+            if (F9.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист25";
+            }
+            if (F10.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист26";
+            }
+            if (F11.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист27";
+            }
+            if (F12.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист28";
+            }
+            if (F13.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист29";
+            }
+            if (F14.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист30";
+            }
+            if (F15.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист31";
+            }
+            if (F16.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист32";
+            }
+            if (F17.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист33";
+            }
+            if (F18.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист34";
+            }
+            if (F19.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист35";
+            }
+            if (F20.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист36";
+            }
+            if (F21.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист37";
+            }
+            if (F22.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист38";
+            }
+            if (F23.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист39";
+            }
+            if (F24.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист40";
+            }
+            if (F25.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист41";
+            }
+            if (F26.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист42";
+            }
+            if (F27.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист43";
+            }
+            if (F28.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист44";
+            }
+            if (F29.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист45";
+            }
+            if (F30.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист46";
+            }
+            if (F31.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист47";
+            }
+            if (F32.IsChecked == true)
+            {
+                Start.KolPov += 1;
+                Start.str[Start.KolPov] = "Лист48";
+            }
+
             MessageBox.Show(Start.KolPov.ToString());
 
             //MessageBox.Show(Start.str[1].ToString());
