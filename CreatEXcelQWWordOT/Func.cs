@@ -17,146 +17,13 @@ namespace CreatEXcelQWWordOT
     {
         public static int ddd;
 
-            public static void BP114F()
-            {
-                StreamReader EDD = new StreamReader("log1.txt");
-                string lim;
-                lim = EDD.ReadLine().ToString();
+        public static void BP114F()
+        {
+            StreamReader EDD = new StreamReader("log1.txt");
+            string lim;
+            lim = EDD.ReadLine().ToString();
+        }
 
-
-
-
-                if (Start.ВР114F == true)
-                {
-
-                    //Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][StartIndex], worksheet2.Cells[6][StartIndex + 5]];
-                    //RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
-                    //    RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
-                    //    RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
-                    //    RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
-                    //    RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
-                    //    RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //worksheet2.Cells[6][StartIndex] = worksheet1.Cells[6][StartIndex];
-                    //Excel.Range Head21 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    //Head21.Merge();
-                    //StartIndex +=1;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //Excel.Range Head211 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    //Head211.Merge();
-                    //StartIndex +=1;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //Excel.Range Head214 = worksheet2.Range[worksheet2.Cells[2][StartIndex], worksheet2.Cells[5][StartIndex]];
-                    //Head214.Merge();
-                    //StartIndex +=1;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //worksheet2.Cells[3][StartIndex] = worksheet1.Cells[3][StartIndex];
-                    //worksheet2.Cells[4][StartIndex] = worksheet1.Cells[4][StartIndex];
-                    //worksheet2.Cells[5][StartIndex] = worksheet1.Cells[5][StartIndex];
-                    //StartIndex +=1;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //StartIndex += 1;
-                    //worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][StartIndex];
-                    //worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][StartIndex];
-                    //Excel.Range Head2 = worksheet2.Range[worksheet2.Cells[6][2], worksheet2.Cells[6][StartIndex]];
-                    //Head2.Merge();
-                    //StartIndex += 1;
-                    //string g = "Лист2";
-                    //Viz(g);
-
-                }
-                else { }
-
-                if (Start.ВР2F == true)
-
-                {
-                    //string g = "Лист3";
-                    //Viz(g);
-                
-                }
-
-                //  }
-                //  else { }
-                //  if (Start.ZN34 == true)
-                //  {
-                //      Excel.Range RR1 = worksheet.Range[worksheet.Cells[1][StartIndex], worksheet.Cells[5][StartIndex + 9]];
-                //      RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
-                //          RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
-                //          RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
-                //          RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
-                //          RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
-                //          RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
-
-                //      worksheet.Cells[1][StartIndex] = " Завод ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Наименование ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Поступило штук ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " П№ чертежа ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " ВидПроверки ";
-                //      worksheet.Cells[2][StartIndex] = " Норма ";
-                //      worksheet.Cells[3][StartIndex] = " Факт ";
-                //      worksheet.Cells[4][StartIndex] = " Проверено, шт ";
-                //      worksheet.Cells[5][StartIndex] = " Несоотв., шт ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = "Ø посадочного отверстия, мм ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Ø бурта наружный, мм ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Высота, мм ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Ø наружный, мм ";
-                //      StartIndex += 1;
-                //      worksheet.Cells[1][StartIndex] = " Масса,г ";
-
-
-                //      StartIndex -= 9;
-
-                //      worksheet.Cells[2][StartIndex] = Start.Zav;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Ima.ToString(); ;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = Start.KolTov;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Chert;
-                //      StartIndex += 1;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = $"{DataElemProduc.ZN34.PosOtv} - {DataElemProduc.ZN34.Pog}";
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.BurtNar;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.Hei;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = DataElemProduc.ZN34.NarDia;
-                //      StartIndex += 1;
-                //      worksheet.Cells[2][StartIndex] = " Напишите массу";
-
-
-
-
-
-                //      worksheet.Columns.AutoFit();
-
-
-                //  }
-
-
-
-
-            }
-
-
-            public static void In6Rows()
-            {
-
-            }
 
         public static void Viz(string[] s)
         {
@@ -165,26 +32,17 @@ namespace CreatEXcelQWWordOT
             Excel.Workbook xlWB;
 
             string xlFileName = "E:/Практика от 01.03.21/CreatEXcelQWWordOT/CreatEXcelQWWordOT/bin/Debug/Form.xlsx";
-            xlWB = App.Workbooks.Open(xlFileName.ToString()); //открываем наш файл 
-            int StartIndex = 1;
-            //MessageBox.Show(s[1].ToString());
-
-
+            xlWB = App.Workbooks.Open(xlFileName.ToString());
+            int StartIndex = 1; 
             for (int i = 0; i <= Start.KolPov; i++)
             {
 
-                //try
-                //{
-
+                try
+                {
                 int pp = StartIndex;
-
-
                 Excel.Worksheet worksheet1 = App.Worksheets[s[i]];
                 Excel.Worksheet worksheet2 = App.Worksheets["Отчет"];
                 worksheet2.Columns.AutoFit();
-
-
-
                 worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][1];
                 worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][1];
                 worksheet2.Cells[6][StartIndex] = worksheet1.Cells[6][1];
@@ -220,13 +78,12 @@ namespace CreatEXcelQWWordOT
                 StartIndex += 1;
 
 
-
-
-                //MessageBox.Show(StartIndex.ToString());
-                if (worksheet1.Cells[1][StartIndex].Formula == "Прочность резьбового соединения")
+                    //MessageBox.Show(StartIndex.ToString());
+                    if (worksheet1.Cells[1][8].Formula == "Прочность резьбового соединения" )
                 {
-                   
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][8];
+                        //MessageBox.Show(worksheet1.Cells[2][StartIndex - 7].Formula);
+
+                        worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][8];
                     int Nwe = StartIndex;
                     StartIndex += 1;
                     worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][8];
@@ -240,7 +97,7 @@ namespace CreatEXcelQWWordOT
                     worksheet2.Cells[3][Nwe + 1] = "2)";
                     worksheet2.Cells[3][Nwe + 2] = "3)";
                     StartIndex += 1;
-                    MessageBox.Show(StartIndex.ToString()) ;
+                    //MessageBox.Show(StartIndex.ToString()) ;
                 }
                 else
                 {
@@ -248,10 +105,18 @@ namespace CreatEXcelQWWordOT
                     worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][8];
                     StartIndex += 1;
                 }
-                    
-                
 
-                if (worksheet1.Cells[1][StartIndex].Formula == "Скручивание резьбы фитинга")
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 15].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 13].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 14].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 12].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 11].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 10].Formula);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 9].Formula);
+                    //MessageBox.Show(worksheet2.Cells[2][StartIndex-8]);
+                    //MessageBox.Show(worksheet1.Cells[2][StartIndex - 7].Formula);
+
+                    if (worksheet1.Cells[1][11].Formula == "Скручивание резьбы фитинга")
                 {
                   
                     worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][11];
@@ -267,8 +132,10 @@ namespace CreatEXcelQWWordOT
                     worksheet2.Cells[3][Nwe] = "1)";
                     worksheet2.Cells[3][Nwe + 1] = "2)";
                     worksheet2.Cells[3][Nwe + 2] = "3)";
+                        StartIndex += 1;
 
-                }
+
+                    }
                 else
                 {
 
@@ -284,34 +151,80 @@ namespace CreatEXcelQWWordOT
                     StartIndex += 1;
                 }
                 else { }
-                if (worksheet1.Cells[1][StartIndex].Formula == "Масса, г")
+                    MessageBox.Show(StartIndex.ToString());
+                    if (worksheet1.Cells[1][14].Formula == "Масса, г")
+                    {
+                        worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][14];
+                        worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][14];
+                        StartIndex += 1;
+                        StartIndex += 1;
+                    }
+                    else { }
+                    if (worksheet2.Cells[1][StartIndex].Formula == "Масса, г")
                 {
-                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][11];
-                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][11];
+                    worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][14];
+                    worksheet2.Cells[2][StartIndex] = worksheet1.Cells[2][14];
                     StartIndex += 1;
                 }
-                else { }
+                    else { }
+             
 
 
 
                 int gg = StartIndex;
-  
-            
-                Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg]];
-                    RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
-                        RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
-                        RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
-                        RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
-                        RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
-                        RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
-                StartIndex += 1;
 
-                //}
+                    if (worksheet1.Cells[1][8].Formula == "Прочность резьбового соединения")
+                    {
+                        Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg-2]];
+                        RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
+                        StartIndex += 1;
+                    }
+                    else
+                    {
+                        Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg-4]];
+                        RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
+                        StartIndex += 1;
+                    }
+                    if (worksheet1.Cells[1][7].Formula == "Масса, г")
+                    {
+                        Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg-3]];
+                        RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
+                        StartIndex += 1;
+                    }
+                    else { }
+                    if (worksheet1.Cells[1][7].Formula == "Внутренний Ø в месте присоединения к закладной (SIZE 5)")
+                    {
+                        Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg]];
+                        RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
+                        StartIndex += 1;
+                    }
+                   
+                }
 
-                //catch (Exception ex)
-                //{
-                //    ex.Message.ToString();
-                //}
+                catch 
+                {
+                    MessageBox.Show(" Ошибка!!! Перезапустите приложение");
+                }
 
                 
             }
