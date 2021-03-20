@@ -38,9 +38,29 @@ namespace CreatEXcelQWWordOT
         {
 
 
-            MainWindow WW = new MainWindow();
-            WW.Show();
-            this.Close();
+            ChekPress();
+
+
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if(e.Key.Equals(Key.Enter) == true)
+            {
+                ChekPress();
+            }
+            if (e.Key.Equals(Key.Escape) == true)
+            {
+                MainWindow ww = new MainWindow();
+                ww.Show();
+                this.Close();
+                
+            }
+        }
+    
+    public void ChekPress()
+        {
+          
             if (BP114f.IsChecked == true)
             {
                 Start.KolPov += 1;
@@ -66,7 +86,7 @@ namespace CreatEXcelQWWordOT
 
 
             }
-            if(BP114f_Copy.IsChecked == true)
+            if (BP114f_Copy.IsChecked == true)
             {
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист5";
@@ -81,12 +101,12 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист7";
             }
-            if(BP114f_Copy1.IsChecked == true)
+            if (BP114f_Copy1.IsChecked == true)
             {
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист8";
             }
-            if(BP2f_Copy1.IsChecked == true)
+            if (BP2f_Copy1.IsChecked == true)
             {
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист9";
@@ -121,7 +141,7 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист14";
             }
-            
+
             if (BP2f_Copy3.IsChecked == true)
             {
                 Start.KolPov += 1;
@@ -447,7 +467,7 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист80";
             }
-           
+
             if (F64.IsChecked == true)
             {
                 Start.KolPov += 1;
@@ -563,7 +583,7 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист103";
             }
-            
+
             if (F88.IsChecked == true)
             {
                 Start.KolPov += 1;
@@ -684,6 +704,9 @@ namespace CreatEXcelQWWordOT
                 Start.KolPov += 1;
                 Start.str[Start.KolPov] = "Лист129";
             }
+            MainWindow WW = new MainWindow();
+            WW.Show();
+            this.Close();
             MessageBox.Show(Start.KolPov.ToString());
 
             if (Start.KolPov == -1)
@@ -696,10 +719,9 @@ namespace CreatEXcelQWWordOT
                 //MessageBox.Show(Start.str[1].ToString());
                 Func.Viz(Start.str);
             }
-
-
         }
-
-  
+    
+    
+    
     }
 }

@@ -15,14 +15,6 @@ namespace CreatEXcelQWWordOT
 
     public class Func
     {
-        public static int ddd;
-
-        public static void BP114F()
-        {
-            StreamReader EDD = new StreamReader("log1.txt");
-            string lim;
-            lim = EDD.ReadLine().ToString();
-        }
 
 
         public static void Viz(string[] s)
@@ -39,6 +31,7 @@ namespace CreatEXcelQWWordOT
             string xlFileName = L;
             xlWB = App.Workbooks.Open(L);
             int StartIndex = 1;
+          
             for (int i = 0; i <= Start.KolPov; i++)
             {
 
@@ -156,7 +149,7 @@ namespace CreatEXcelQWWordOT
                     StartIndex += 1;
                 }
                 else { }
-                    MessageBox.Show(StartIndex.ToString());
+                    //MessageBox.Show(StartIndex.ToString());
                     if (worksheet1.Cells[1][14].Formula == "Масса, г")
                     {
                         worksheet2.Cells[1][StartIndex] = worksheet1.Cells[1][14];
@@ -172,11 +165,12 @@ namespace CreatEXcelQWWordOT
                     StartIndex += 1;
                 }
                     else { }
-             
+                   
 
 
 
-                int gg = StartIndex;
+
+                    int gg = StartIndex;
 
                     if (worksheet1.Cells[1][8].Formula == "Прочность резьбового соединения")
                     {
@@ -223,7 +217,17 @@ namespace CreatEXcelQWWordOT
                             RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
                         StartIndex += 1;
                     }
-                   
+                    if (worksheet1.Cells[1][7].Formula == "Высота, мм")
+                    {
+                        Excel.Range RR1 = worksheet2.Range[worksheet2.Cells[1][pp], worksheet2.Cells[6][gg+2]];
+                        RR1.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlEdgeTop].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideHorizontal].LineStyle =
+                            RR1.Borders[Excel.XlBordersIndex.xlInsideVertical].LineStyle = Excel.XlLineStyle.xlContinuous;
+                        StartIndex += 1;
+                    }
                 }
 
                 catch 
@@ -231,9 +235,9 @@ namespace CreatEXcelQWWordOT
                     MessageBox.Show(" Ошибка!!! Перезапустите приложение");
                 }
 
-                
+               
             }
-        
+           
             App.Visible = true;
     
 

@@ -18,6 +18,7 @@ using Microsoft.Win32;
 using System.Windows.Forms;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using MessageBox = System.Windows.Forms.MessageBox;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CreatEXcelQWWordOT
 {
@@ -42,9 +43,17 @@ namespace CreatEXcelQWWordOT
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            EditProd WW = new EditProd();
-            WW.Show();
-            this.Close();
+            var App = new Excel.Application();
+            Excel.Workbook xlWB;
+
+            string L;
+            StreamReader rr = new StreamReader("Put.txt");
+            L = rr.ReadLine();
+            
+            L = L.Replace(@"\", "/");
+            string xlFileName = L;
+            xlWB = App.Workbooks.Open(L);
+            App.Visible = true;
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
