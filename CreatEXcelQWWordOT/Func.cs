@@ -33,10 +33,12 @@ namespace CreatEXcelQWWordOT
 
             string L;
             StreamReader rr = new StreamReader("Put.txt");
-            L = rr.ReadToEnd();
+            L = rr.ReadLine();
+            //"E:/.../CreatEXcelQWWordOT/CreatEXcelQWWordOT/bin/Debug/Form.xlsx"
+            L = L.Replace(@"\", "/");
             string xlFileName = L;
-            xlWB = App.Workbooks.Open(xlFileName.ToString());
-            int StartIndex = 1; 
+            xlWB = App.Workbooks.Open(L);
+            int StartIndex = 1;
             for (int i = 0; i <= Start.KolPov; i++)
             {
 
