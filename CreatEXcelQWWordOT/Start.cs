@@ -14,6 +14,7 @@ namespace CreatEXcelQWWordOT
         public static int StartIndex = 1;
         public static string KolTov ="werwr";
         public static string Zav = "";
+        public static string PutinBB = "";
         public static  bool ВР114F = false ;
         public static bool ВР2F = false;
         public static bool ZN34 = false;

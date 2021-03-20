@@ -31,7 +31,10 @@ namespace CreatEXcelQWWordOT
             var App = new Excel.Application();
             Excel.Workbook xlWB;
 
-            string xlFileName = "E:/Практика от 01.03.21/CreatEXcelQWWordOT/CreatEXcelQWWordOT/bin/Debug/Form.xlsx";
+            string L;
+            StreamReader rr = new StreamReader("Put.txt");
+            L = rr.ReadToEnd();
+            string xlFileName = L;
             xlWB = App.Workbooks.Open(xlFileName.ToString());
             int StartIndex = 1; 
             for (int i = 0; i <= Start.KolPov; i++)
